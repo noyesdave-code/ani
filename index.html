@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ani Builder</title>
+  <meta name="description" content="Ani builder workspace deployed from the Empire platform." />
+  <style>
+    :root{color-scheme:dark;--bg:#0a0a0b;--panel:#151518;--text:#f7f7f8;--muted:#a7a7ad;--red:#e11d48;--line:#2a2a31;}
+    *{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:grid;place-items:center;padding:28px;}
+    main{width:min(980px,100%);display:grid;gap:22px} .hero{border:1px solid var(--line);background:linear-gradient(145deg,#151518,#0f0f11);padding:32px;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.35)}
+    h1{font-size:clamp(42px,8vw,92px);line-height:.9;margin:0 0 16px;letter-spacing:0} p{font-size:18px;line-height:1.55;color:var(--muted);max-width:760px} .badge{display:inline-flex;align-items:center;gap:10px;color:#fff;font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:.08em;margin-bottom:18px}.dot{width:10px;height:10px;background:var(--red);border-radius:999px;box-shadow:0 0 22px var(--red)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:18px}.card b{display:block;margin-bottom:8px}.card span{color:var(--muted)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px} a{color:var(--text);text-decoration:none}.button{border:1px solid var(--red);background:var(--red);padding:12px 16px;border-radius:6px;font-weight:800}.ghost{border-color:var(--line);background:transparent}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="badge"><span class="dot"></span> Ani is live on GitHub</div>
+      <h1>Ani Builder</h1>
+      <p>This repository is the public GitHub workspace for the Empire builder. Ani can now be pointed at this repo/workflow as the deployment target for customer projects.</p>
+      <div class="cta"><a class="button" href="./">Open live site</a><a class="button ghost" href="https://github.com/noyesdave-code/ani">View GitHub repo</a></div>
+    </section>
+    <section class="grid" aria-label="Deployment status">
+      <div class="card"><b>Repository</b><span>Created or updated through the GitHub API using the stored token.</span></div>
+      <div class="card"><b>Pages workflow</b><span>GitHub Actions workflow included for publishing this site.</span></div>
+      <div class="card"><b>Ani workspace</b><span>Ready for future edits from the Empire IDE deployment button.</span></div>
+    </section>
+  </main>
+</body>
+</html>
